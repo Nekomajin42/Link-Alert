@@ -1,7 +1,3 @@
-div#wallpaper {
-background-image: url("default-background.jpg");
-background-position: 50% 50%;}
-
 div#sidebar-icon {
 background-image: url("../icons/icon.svg");
 background-size: 64px 64px;
