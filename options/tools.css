@@ -1,0 +1,395 @@
+@charset "utf-8";
+
+/* This file holds CSS that brings Opera 12 style to Opera 14 internal pages
+ *
+ * Copyright (C) 2013 Opera Software ASA.  All rights reserved.
+ * This file is an original work developed by Opera Software ASA
+ *
+ * Modifications and additional rules in style.css
+ */
+
+/* Styles for internal tool pages such as Downloads and History.
+ * Basic markup:
+<!doctype html>
+<body>
+  <div id="wallpaper">
+    <div id="tool-container">
+      <div id="sidebar">
+        <div id="sidebar-icon"></div>
+        <h1 i18n-content="menuTitle"></h1>
+        <input class="filter" type="search" results="0"
+            i18n-values="placeholder:searchPlaceholder"
+            incremental autofocus>
+        <menu id="sidebar-menu">
+          <li data-target="0" class="selected">One</li>
+          <li data-target="1">Two</li>
+          <li data-target="2">Three</li>
+        </menu>
+      </div> <!-- sidebar -->
+      <div id="content">
+        Content
+      </div> <!-- content -->
+    </div> <!-- tool-container -->
+  </div> <!-- wallpaper -->
+</body>
+ */
+
+html.loading #tool-container {
+  visibility: hidden;
+}
+
+html,
+body {
+  background-color: rgb(237, 237, 237);
+  font: menu;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#wallpaper-canvas,
+#scroll-container {
+  height: 100%;
+  left: 0;
+  overflow: auto;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+#wallpaper {
+  background-image: none;
+  background-size: cover;
+  height: 100%;
+  left: 0;
+  overflow: auto;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+#tool-container {
+  box-sizing: border-box;
+  height: 100%;
+  margin: 0 auto;
+  max-width: 940px;
+  min-height: 500px;
+  min-width: 780px;
+  padding: 0 20px;
+  position: relative;
+}
+
+#sidebar {
+  bottom: 0;
+  box-sizing: border-box;
+  color: rgb(73, 73, 73);
+  overflow: hidden;
+  padding: 50px 20px 20px;
+  pointer-events: none;
+  position: fixed;
+  top: 0;
+  width: 231px;
+}
+
+#sidebar menu li, #sidebar a, #sidebar input {
+  pointer-events: all;
+}
+
+.search-view #sidebar,
+#sidebar.no-menu {
+  -webkit-border-end: 1px solid rgba(0, 0, 0, .2);
+}
+
+/* Sidebar icon must be given a background image */
+#sidebar-icon {
+  display: block;
+  width: 64px;
+  height: 64px;
+  background-repeat: no-repeat;
+}
+
+#sidebar h1 {
+  font-size: 18px;
+}
+
+#sidebar .search {
+  -webkit-appearance: none; /* Make it possible to use border-radius */
+  -webkit-padding-start: 24px;
+  /* TODO(steincb): Update when given a 2x filter icon */
+  background-image: -webkit-image-set(
+      url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABz0lEQVQ4EaWSv0sDMRTH73LX++XZVlDrT3BzaIdCiy5d6uosTrr5Rwhu4uzmILiKOOvu3F+00A6KP6aqCLbqeZfLXe7OREiIoiCY5b28vO8n771ETpJE+s8C/xFTrSoCqtWq4TjOejqdXUppWhZH4dvLYNDCGB93Oh1XzGW+zFqgYoTC3czYWA4heBeE4b2uGfOmacy9Dgcvw+Fwp9vtvjMhs7wCevP4RC739Hh/2mw2z1hCuVxenZyaWYMQbpLYAYszy2dgWfYy9LwrUUyTGo3Gues617adLslkMSGzHCABkEU46LMD0aIg6MsA6Pl8fkSMU58Doih0FABmvifQvaoo01GMw16v530/5wDf8xqKkloslUorYhLdm6a1EOO4SQYei2fU569QKBRssvZSupHFAb5MEvwgy+q0aZkLmmF5HnRd//3tqFar3YoQDqDBSqUy6vv+hqppZGBAl5IYS4ncAqo6qWl6Jgh8JUT+IYG0GeQLgAfJtOnAaM+07GKxOGtY9japjvwtZBDISb1ev6D5fAZMTC0RJfTTsJ7b7XYfB/4+gm4qlgAkL7JF7vjU/ggQYcwn/+GGPMRRiGAmjqJnBv+xBSb6i/1zBb/BPgDPWeB7e2CpqwAAAABJRU5ErkJggg==') 1x);
+  background-position: 5px 50%;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  display: block;
+  min-height: 22px;
+  width: 100%;
+}
+
+html[dir='rtl'] #sidebar .search {
+  background-position: right 5px top 50%;
+}
+
+#sidebar .search:focus {
+  outline: none;
+}
+
+#sidebar-menu {
+  color: rgb(112, 112, 112);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  list-style-type: none;
+  margin: 1em 0 0 0;
+  padding: 0;
+  position: relative;
+}
+
+.search-view #sidebar-menu {
+  display: none;
+}
+
+#sidebar-menu li {
+  cursor: pointer;
+  padding: 5px 0;
+  position: relative;
+}
+
+#sidebar-menu li:hover {
+  color: black;
+}
+
+#sidebar-menu .selected {
+  cursor: default;
+  color: black;
+}
+
+#sidebar-menu a {
+  text-decoration: none;
+  color: inherit;
+}
+
+#sidebar-menu a:hover {
+  color: black;
+}
+
+/* Triangle selection indicator*/
+#sidebar-menu .selected::after {
+  background-clip: padding-box;
+  background-color: rgba(255, 255, 255, .7);
+  border-left: 1px solid rgba(0, 0, 0, .25);
+  border-top: 1px solid rgba(0, 0, 0, .25);
+  content: '';
+  display: block;
+  height: 12px;
+  margin-top: -6px;
+  pointer-events: none;
+  position: absolute;
+  right: -26px;/* #sidebar padding */
+  top: 50%;
+  width: 12px;
+  -webkit-transform: rotate(-45deg);
+  -webkit-transform-origin: 50% 50%;
+}
+
+html[dir='rtl'] #sidebar-menu .selected::after {
+  left: -26px;
+  right: auto;
+  -webkit-transform: rotate(135deg);
+}
+
+#sidebar-menu .selected::before {
+  border-bottom: 2000px solid rgba(0, 0, 0, .25);
+  border-top: 2000px solid rgba(0, 0, 0, .25);
+  content: '';
+  display: block;
+  height: 17px;
+  margin-top: -2008px;
+  pointer-events: none;
+  position: absolute;
+  right: -20px;
+  top: 50%;
+  width: 1px;
+}
+
+html[dir='rtl'] #sidebar-menu .selected::before {
+  left: -20px;
+  right: auto;
+}
+
+#content {
+  background-clip: padding-box;
+  background-color: rgba(255, 255, 255, .8);
+  background-image: linear-gradient(to right, rgba(255, 255, 255, .7),
+                                              rgba(255, 255, 255, .7));
+  background-position: 230px 0;
+  background-repeat: repeat-y;
+  border-left: 1px solid rgba(0, 0, 0, .25);
+  border-right: 1px solid rgba(0, 0, 0, .25);
+  box-sizing: border-box;
+  min-height: 100%;
+  padding: 50px 30px 30px 30px;
+  -webkit-padding-start: 260px; /* #sidebar width */
+}
+
+html[dir='rtl'] #content {
+  background-position: calc(100% - 230px) 0;
+}
+
+a {
+  color: rgb(17, 85, 204);
+}
+
+.trash {
+  background: -webkit-image-set(url("opera://theme/IDR_REMOVE") 1x, url("opera://theme/IDR_REMOVE@2x") 2x) transparent no-repeat 50% 50%;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  display: block;
+  height: 14px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 14px;
+}
+
+html[dir="rtl"] .trash {
+  right: auto;
+  left: 10px;
+}
+
+.trash:hover {
+  background: -webkit-image-set(url("opera://theme/IDR_REMOVE_HOVERED") 1x, url("opera://theme/IDR_REMOVE_HOVERED@2x") 2x) transparent no-repeat 50% 50%;
+}
+
+/* Native controls */
+.checkbox,
+.radio {
+  margin-bottom: 6px;
+}
+
+.checkbox > *,
+.radio > * {
+  display: -webkit-inline-flex;
+  align-items: center;
+}
+
+.checkbox input,
+.radio input {
+  margin: 0;
+  -webkit-margin-end: 6px;
+}
+
+.checkbox input + label,
+.radio input + label,
+.checkbox input + span,
+.radio input + span {
+  -webkit-flex: 1;
+}
+
+.checkbox input:disabled + label,
+.radio input:disabled + label,
+.checkbox input:disabled + span,
+.radio input:disabled + span {
+  color: rgb(124, 124, 124);
+}
+
+.controls-list-end,
+.controls-list-start {
+  display: -webkit-flex;
+  -webkit-align-items: flex-start;
+  -webkit-flex-flow: row wrap;
+}
+
+.controls-list-flexible {
+  -webkit-flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  -webkit-flex-basis: 0;
+}
+
+.controls-list-end {
+  -webkit-flex-flow: row-reverse wrap;
+}
+
+.native-control-wrap {
+  display: -webkit-flex;
+}
+
+.native-control {
+  display: block;
+  margin: 0;
+  min-height: 23px;
+  min-width: 6rem;
+  line-height: initial;
+}
+
+.controls-list-start .native-control-wrap,
+.controls-list-start .native-control {
+  margin: 3px 0 0 0;
+  -webkit-margin-end: 10px;
+}
+
+.controls-list-end .native-control-wrap,
+.controls-list-end .native-control {
+  margin: 3px 0 0 0;
+  -webkit-margin-start: 10px;
+}
+
+.controls-list-start .native-control-wrap .native-control,
+.controls-list-end .native-control-wrap .native-control {
+  margin-top: 0;
+  -webkit-margin-start: 0;
+  -webkit-margin-end: 0;
+}
+
+.section-header {
+  color: rgb(95, 95 ,95);
+  display: -webkit-flex;
+  font-size: 1.17rem;
+  font-weight: normal;
+  line-height: 2rem;
+  margin: 0 0 12px 0;
+  white-space: pre-wrap;
+}
+
+.section-header span, .section-header strong {
+  white-space: initial;
+}
+
+.section-header::after {
+  background-image: linear-gradient(rgb(190, 190, 190),
+                                    transparent 1px);
+  background-position: left 55%;
+  background-repeat: no-repeat;
+  background-size: 100% 1px;
+  content: '';
+  -webkit-flex: auto;
+  -webkit-margin-start: 10px;
+}
+
+#head-buttons {
+  margin-bottom: 12px;
+}
+
+#head-buttons.controls-list-end .native-control {
+  margin-top: 0;
+}
+
+/*for backward compatibility*/
+[hidden] {
+  display: none !important;
+}
+
+button,
+input[type='number'],
+input[type='password'],
+input[type='search'],
+input[type='text'],
+input[type='url'],
+input:not([type]),
+select,
+textarea {
+  box-sizing: border-box;
+  font: inherit;
+}

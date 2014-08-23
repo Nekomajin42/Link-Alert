@@ -1,0 +1,44 @@
+div#wallpaper {
+background-image: url("default-background.jpg");
+background-position: 50% 50%;}
+
+div#sidebar-icon {
+background-image: url("../icons/icon.svg");
+background-size: 64px 64px;
+opacity: 0.5;}
+
+div.subpage {
+display: none;}
+div.visible {
+display: block;}
+
+section {
+overflow: auto;
+margin: 0px 0px 24px 0px;
+font-size: 14px;}
+
+div.icon, div.empty {
+display: inline-block;
+width: 16px;
+height: 16px;
+margin-right: 2px;
+background-size: 16px 16px;}
+
+form {
+line-height: 150%;
+text-align: justify;}
+
+section ul {
+padding: 0px 0px 0px 20px;
+margin: 14px 0px 0px 0px;
+line-height: 150%;
+text-align: justify;}
+
+textarea {
+width: 585px;
+max-width: 585px;
+height: 100px;
+float: right;
+border-radius: 3px;}
+input#saveBlacklist {
+float: right;}

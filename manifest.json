@@ -1,0 +1,49 @@
+{
+	"name": "Link Alert",
+	"developer": 
+	{
+		"name" : "Nekomajin",
+		"url" : "http://tothrobert.ininet.hu"
+	},
+	"description" : "__MSG_manifest_description__",
+	"default_locale": "en",
+	"manifest_version" : 2,
+	"version" : "1.2",
+	"background" : 
+	{
+		"scripts" : ["background.js"],
+		"persistent" : false
+	},
+	"icons" : 
+	{
+		"128": "icons/icon_128.png", 
+		"64": "icons/icon_64.png", 
+		"32": "icons/icon_32.png", 
+		"16": "icons/icon_16.png"
+	},
+	"options_page" : "options/options.html",
+	"content_scripts": 
+	[
+		{
+			"js": ["link_alert.js"], 
+			"matches": ["<all_urls>"], 
+			"include_globs": [], 
+			"exclude_globs": [], 
+			"run_at": "document_end", 
+			"all_frames" : true
+		}
+	],
+	"web_accessible_resources" : 
+	[
+		"link_alert.js", 
+		"icons/icon_128.png", 
+		"alerts/*"
+	],
+	"permissions" : 
+	[
+		"tabs", 
+		"http://*/*", 
+		"https://*/*"
+	],
+	"content_security_policy": "script-src 'self'; object-src 'self';"
+}

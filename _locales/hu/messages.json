@@ -1,0 +1,416 @@
+{
+	"manifest_description" : 
+	{
+		"message" : "Megmutatja, hogy milyen linkre készülsz rákattintani.",
+		"description" : "Manifest JSON description string"
+	},
+	"settings_popup_install" : 
+	{
+		"message" : "A Link Alert beépült a böngésződbe. Kérlek, nézz szét a beállításokban!",
+		"description" : "Install/update popup"
+	},
+	"settings_popup_update" : 
+	{
+		"message" : "A Link Alert frissült. Kérlek, nézz szét a változáslistában az újdonságokért!",
+		"description" : "Install/update popup"
+	},
+	"settings_sidebar_menuitem_settings" : 
+	{
+		"message" : "Beállítások",
+		"description" : "Sidebar menu"
+	},
+	"settings_sidebar_menuitem_help" : 
+	{
+		"message" : "Súgó",
+		"description" : "Sidebar menu"
+	},
+	"settings_sidebar_menuitem_changelog" : 
+	{
+		"message" : "Változáslista",
+		"description" : "Sidebar menu"
+	},
+	"settings_sidebar_menuitem_credits" : 
+	{
+		"message" : "Névjegy",
+		"description" : "Sidebar menu"
+	},
+	"settings_content_preferences_header" : 
+	{
+		"message" : "Beállítások",
+		"description" : "Preferences header"
+	},
+	"settings_content_preferences_showBox" : 
+	{
+		"message" : "Helyezze az ikonokat egy dobozba, hogy úgy nézzen ki, mint egy eszköztipp",
+		"description" : "Preferences body"
+	},
+	"settings_content_preferences_smartPosition" : 
+	{
+		"message" : "Okos pozícionálás engedélyezése",
+		"description" : "Preferences body"
+	},
+	"settings_content_preferences_darkIcons" : 
+	{
+		"message" : "Inverz ikonok használata",
+		"description" : "Preferences body"
+	},
+	"settings_content_preferences_noTitle" : 
+	{
+		"message" : "A title attribútum eltávolítása a linkekről",
+		"description" : "Preferences body"
+	},
+	"settings_content_preferences_keepZoom" : {
+		"message" : "Ne méretezze át az ikonokat az oldal nagyításakor",
+		"description" : "Preferences body"
+	},
+	"settings_content_preferences_blacklistOn" : 
+	{
+		"message" : "A bővítmény letiltása a következő oldalakon:",
+		"description" : "Preferences body"
+	},
+	"settings_content_preferences_blacklistEditor" : 
+	{
+		"message" : "Nem tudod, hogy kell használni a feketelistát? Nézz szét a Súgóban!",
+		"description" : "Blacklist editor placeholder"
+	},
+	"settings_content_preferences_saveBlacklist" : 
+	{
+		"message" : "Feketelista mentése",
+		"description" : "Blacklist save button"
+	},
+	"settings_content_fileTypes_header" : 
+	{
+		"message" : "Fájl típusok",
+		"description" : "File types header"
+	},
+	"settings_content_fileTypes_text" : 
+	{
+		"message" : "Szöveg",
+		"description" : "File types body"
+	},
+	"settings_content_fileTypes_document" : 
+	{
+		"message" : "Formázott szöveg",
+		"description" : "File types body"
+	},
+	"settings_content_fileTypes_spreadsheet" : 
+	{
+		"message" : "Táblázat",
+		"description" : "File types body"
+	},
+	"settings_content_fileTypes_presentation" : 
+	{
+		"message" : "Prezentáció",
+		"description" : "File types body"
+	},
+	"settings_content_fileTypes_database" : 
+	{
+		"message" : "Adatbázis",
+		"description" : "File types body"
+	},
+	"settings_content_fileTypes_ebook" : 
+	{
+		"message" : "E-könyv",
+		"description" : "File types body"
+	},
+	"settings_content_fileTypes_image" : 
+	{
+		"message" : "Kép",
+		"description" : "File types body"
+	},
+	"settings_content_fileTypes_video" : 
+	{
+		"message" : "Videó",
+		"description" : "File types body"
+	},
+	"settings_content_fileTypes_audio" : 
+	{
+		"message" : "Hang",
+		"description" : "File types body"
+	},
+	"settings_content_fileTypes_flash" : 
+	{
+		"message" : "Flash",
+		"description" : "File types body"
+	},
+	"settings_content_fileTypes_archive" : 
+	{
+		"message" : "Tömörített állomány",
+		"description" : "File types body"
+	},
+	"settings_content_fileTypes_data" : 
+	{
+		"message" : "Strukturált adat",
+		"description" : "File types body"
+	},
+	"settings_content_fileTypes_executable" : 
+	{
+		"message" : "Futtatható fájl",
+		"description" : "File types body"
+	},
+	"settings_content_fileTypes_extension" : 
+	{
+		"message" : "Böngésző bővítmény",
+		"description" : "File types body"
+	},
+	"settings_content_fileTypes_source" : 
+	{
+		"message" : "Forráskód",
+		"description" : "File types body"
+	},
+	"settings_content_fileTypes_font" : 
+	{
+		"message" : "Betűtípus",
+		"description" : "File types body"
+	},
+	"settings_content_fileTypes_torrent" : 
+	{
+		"message" : "BitTorrent",
+		"description" : "File types body"
+	},
+	"settings_content_protocols_header" : 
+	{
+		"message" : "Protokolok",
+		"description" : "Protocols header"
+	},
+	"settings_content_protocols_insecure" : 
+	{
+		"message" : "HTTP kapcsolat (nem biztonságos)",
+		"description" : "Protocols body"
+	},
+	"settings_content_protocols_secure" : 
+	{
+		"message" : "HTTPS kapcsolat (biztonságos)",
+		"description" : "Protocols body"
+	},
+	"settings_content_protocols_email" : 
+	{
+		"message" : "E-mail cím",
+		"description" : "Protocols body"
+	},
+	"settings_content_protocols_opera" : 
+	{
+		"message" : "Opera belső lap",
+		"description" : "Protocols body"
+	},
+	"settings_content_protocols_internal" : 
+	{
+		"message" : "Böngésző (nem Opera) belső lap",
+		"description" : "Protocols body"
+	},
+	"settings_content_protocols_feed" : 
+	{
+		"message" : "Hírcsatorna",
+		"description" : "Protocols body"
+	},
+	"settings_content_protocols_ftp" : 
+	{
+		"message" : "FTP cím",
+		"description" : "Protocols body"
+	},
+	"settings_content_protocols_coin" : 
+	{
+		"message" : "Elektronikus fizetőeszköz",
+		"description" : "Protocols body"
+	},
+	"settings_content_protocols_magnet" : 
+	{
+		"message" : "Mágnes link",
+		"description" : "Protocols body"
+	},
+	"settings_content_protocols_geolocation" : 
+	{
+		"message" : "Helymeghatározás link",
+		"description" : "Protocols body"
+	},
+	"settings_content_protocols_js" : 
+	{
+		"message" : "Beágyazott JavaScript kód",
+		"description" : "Protocols body"
+	},
+	"settings_content_protocols_voip" : 
+	{
+		"message" : "VoIP hívás",
+		"description" : "Protocols body"
+	},
+	"settings_content_protocols_irc" : 
+	{
+		"message" : "IRC csatorna",
+		"description" : "Protocols body"
+	},
+	"settings_content_protocols_file" : 
+	{
+		"message" : "Helyi fájl",
+		"description" : "Protocols body"
+	},
+	"settings_content_protocols_viewSource" : 
+	{
+		"message" : "Weboldal forráskód módban",
+		"description" : "Protocols body"
+	},
+	"settings_content_attributes_header" : 
+	{
+		"message" : "Attribútumok",
+		"description" : "Attributes header"
+	},
+	"settings_content_attributes_newTab" : 
+	{
+		"message" : "Új fülön/ablakban nyíló link",
+		"description" : "Attributes body"
+	},
+	"settings_content_attributes_onClick" : 
+	{
+		"message" : "Egér kattintást kezelő link",
+		"description" : "Attributes body"
+	},
+	"settings_content_attributes_onContextMenu" : 
+	{
+		"message" : "Saját helyi menüvel rendelkező link",
+		"description" : "Attributes body"
+	},
+	"settings_content_url_header" : 
+	{
+		"message" : "URL szakaszok",
+		"description" : "URL header"
+	},
+	"settings_content_url_hash" : 
+	{
+		"message" : "Oldalon belülre mutató link",
+		"description" : "URL body"
+	},
+	"settings_content_url_query" : 
+	{
+		"message" : "Lekérdezés",
+		"description" : "URL body"
+	},
+	"settings_content_howToUse_header" : 
+	{
+		"message" : "Hogyan használd",
+		"description" : "How to use header"
+	},
+	"settings_content_howToUse_reload" : 
+	{
+		"message" : "A bővítmény telepítése és a beállítások módosítása után frissítened kell a megnyitott lapokat.",
+		"description" : "How to use body"
+	},
+	"settings_content_howToUse_smartPosition" : 
+	{
+		"message" : "Ha engedélyezed az \"okos pozícionálást\", a bővítmény ki fogja számolni, hogy az ikonok elférnek-e az egérkurzor jobb oldalán. Ha nem férnek el, akkor bal oldalra teszi őket. Ha kikapcsolod ezt az opciót, akkor az ikonok mindig a kurzor jobb oldalán jelennek meg, de lehet, hogy kilógnak a látható tartományból.",
+		"description" : "How to use body"
+	},
+	"settings_content_howToUse_blacklist" : 
+	{
+		"message" : "A feketelistában minden címet új sorban helyezz el! Használhatsz csillagot is, hogy egy teljes címtartományt blokkolj. Például<br />A Link Alert letiltása ezen a szócikken: <em>http://en.wikipedia.org/wiki/Opera_browser</em><br />A Link Alert letiltása a teljes angol Wikipédián: <em>http://en.wikipedia.org*</em>",
+		"description" : "How to use body"
+	},
+	"settings_content_performance_header" : 
+	{
+		"message" : "Teljesítménybeli problémák",
+		"description" : "Performance issues header"
+	},
+	"settings_content_performance_lag" : 
+	{
+		"message" : "Előfordulhat, hogy a Link Alert szaggat néhány (túl sok szkriptet tartalmazó) weboldalon. Ha ez zavaró, akkor add hozzá a weboldal címét a feketelistához!",
+		"description" : "Performance issues body"
+	},
+	"settings_content_notes_header" : 
+	{
+		"message" : "Megjegyzések",
+		"description" : "Notes header"
+	},
+	"settings_content_notes_howItWorks" : 
+	{
+		"message" : "A Link Alert csak a forráskódban megjelenő linkeket vizsgálja, nem küld semmilyen kérést a linkelt weboldal irányába. Előfordulhat, hogy egy link úgy hivatkozik például egy PDF fájlra, hogy ez a linkből egyáltalán nem derül ki. Ezzel a módszerrel ezt nem lehet ellenőrizni, ezért ilyen esetekben a Link Alert nem fog jelezni.",
+		"description" : "Notes body"
+	},
+	"settings_content_notes_operaPolicy" : 
+	{
+		"message" : "Az Opera irányelvei szerint a kiegészítők nem működnek a böngésző belső lapjain, például a Beállításokban, az Előzményekben vagy ezen az oldalon.",
+		"description" : "Notes body"
+	},
+	"settings_content_credits_header" : 
+	{
+		"message" : "Névjegy",
+		"description" : "Credits header"
+	},
+	"settings_content_credits_createdBy" : 
+	{
+		"message" : "A Link Alertet <a href=\"http://tothrobert.ininet.hu\" target=\"_blank\">Tóth Róbert</a> készítette.",
+		"description" : "Credits body"
+	},
+	"settings_content_credits_inspiredBy" : 
+	{
+		"message" : "Ezt a kiegészítőt a <a href=\"http://extendopera.org/linked-content/link-alert\" target=\"_blank\">LinkAlert</a> felhasználói szkript ihlette.",
+		"description" : "Credits body"
+	},
+	"settings_content_credits_copyCode" : 
+	{
+		"message" : "Az általam írt kódon kívül az Opera belső lapjait felépítő kódok egy részét is felhasználtam.",
+		"description" : "Credits body"
+	},
+	"settings_content_credits_thanks" : 
+	{
+		"message" : "Köszönet mindenkinek, aki hozzájárult a bővítményhez. <em>(A részleteket lásd a Változáslistában!)",
+		"description" : "Credits body"
+	},
+	"settings_content_warning_header" : 
+	{
+		"message" : "Figyelem",
+		"description" : "Warning header"
+	},
+	"settings_content_warning_notResponsible" : 
+	{
+		"message" : "Ez a bővítmény nem az Opera Software ASA terméke. A cég nem felelős a bővítmény esetleges hibáiért.",
+		"description" : "Warning body"
+	},
+	"settings_content_license_header" : 
+	{
+		"message" : "Licenc",
+		"description" : "License header"
+	},
+	"settings_content_license_share" : 
+	{
+		"message" : "Szabadon terjesztheted a bővítményt, de arra kérlek, hogy ne a NEX fájlt másold, hanem a letöltési oldal linkjét.",
+		"description" : "License body"
+	},
+	"settings_content_license_copy" : 
+	{
+		"message" : "Szabadon másolhatod és módosíthatod a bővítmény forráskódját mindaddig, amíg nem kérsz érte pénzt, és megfelelően hivatkozol a forrásra.",
+		"description" : "License body"
+	},
+	"settings_content_contact_header" : 
+	{
+		"message" : "Kapcsolat",
+		"description" : "Contact header"
+	},
+	"settings_content_contact_feedback1" : 
+	{
+		"message" : "<a href=\"https://addons.opera.com/hu/extensions/details/link-alert-2/\" target=\"_blank\">Opera Bővítmény Katalógus</a>",
+		"description" : "Contact body"
+	},
+	"settings_content_contact_feedback2" : 
+	{
+		"message" : "<a href=\"https://github.com/Nekomajin42/Link-Alert/issues\" target=\"_blank\">GitHub</a>",
+		"description" : "Contact body"
+	},
+	"settings_content_contact_email" : 
+	{
+		"message" : "<a href=\"mailto:nekomajin42@gmail.com\">Email</a>",
+		"description" : "Contact body"
+	},
+	"settings_content_permissions_header" : 
+	{
+		"message" : "Engedélyek",
+		"description" : "Permissions header"
+	},
+	"settings_content_permissions_tabs" : 
+	{
+		"message" : "A Link Alert csak azért kér hozzáférést a lapokhoz, hogy meg tudja nyitni a Beállítások oldalt a bővítmény telepítése és frissítése után.",
+		"description" : "Permissions body"
+	},
+	"settings_content_permissions_data" : 
+	{
+		"message" : "A Link Alert azért kér hozzáférést a webhelyekhez, hogy elemezni tudja a weblapokon megjelenő linkeket.",
+		"description" : "Permissions body"
+	}
+}

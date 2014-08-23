@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:cc="http://creativecommons.org/ns#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:svg="http://www.w3.org/2000/svg"
+     xmlns="http://www.w3.org/2000/svg"
+     xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+     xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+     width="32px"
+     height="32px"
+     id="svg3842"
+     version="1.1"
+     inkscape:version="0.48.4 r9939"
+     sodipodi:docname="new_tab.svg">
+    <defs
+         id="defs3844" />
+    <sodipodi:namedview
+         id="base"
+         pagecolor="#ccc"
+         bordercolor="#666666"
+         borderopacity="1.0"
+         inkscape:pageopacity="1"
+         inkscape:pageshadow="2"
+         inkscape:zoom="16.21875"
+         inkscape:cx="16"
+         inkscape:cy="16"
+         inkscape:current-layer="layer1"
+         showgrid="true"
+         inkscape:grid-bbox="true"
+         inkscape:document-units="px"
+         inkscape:snap-grids="true"
+         inkscape:window-width="1366"
+         inkscape:window-height="706"
+         inkscape:window-x="-8"
+         inkscape:window-y="-8"
+         inkscape:window-maximized="1"
+         inkscape:snap-to-guides="false">
+        <inkscape:grid
+             type="xygrid"
+             id="grid3850"
+             empspacing="5"
+             visible="true"
+             enabled="true"
+             snapvisiblegridlinesonly="true" />
+    </sodipodi:namedview>
+    <metadata
+         id="metadata3847">
+        <rdf:RDF>
+            <cc:Work
+                 rdf:about="">
+                <dc:format>image/svg+xml</dc:format>
+                <dc:type
+                     rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+            </cc:Work>
+        </rdf:RDF>
+    </metadata>
+    <g
+         id="layer1"
+         inkscape:label="Layer 1"
+         inkscape:groupmode="layer">
+        <rect
+             style="fill:black;fill-opacity:1;fill-rule:nonzero;stroke:black;stroke-width:0;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+             id="rect6726"
+             width="26"
+             height="22"
+             x="0"
+             y="0" />
+        <rect
+             style="fill:white;fill-opacity:1;fill-rule:nonzero;stroke:black;stroke-width:0;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+             id="rect6728"
+             width="22"
+             height="18"
+             x="2"
+             y="2" />
+        <rect
+             style="fill:black;fill-opacity:1;fill-rule:nonzero;stroke:black;stroke-width:0;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+             id="rect6730"
+             width="26"
+             height="22"
+             x="6"
+             y="10" />
+        <rect
+             style="fill:white;fill-opacity:1;fill-rule:nonzero;stroke:black;stroke-width:0;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+             id="rect6732"
+             width="22"
+             height="18"
+             x="8"
+             y="12" />
+        <rect
+             style="fill:black;fill-opacity:1;fill-rule:nonzero;stroke:black;stroke-width:0;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+             id="rect6738"
+             width="18"
+             height="2"
+             x="4"
+             y="4" />
+        <rect
+             style="fill:black;fill-opacity:1;fill-rule:nonzero;stroke:black;stroke-width:0;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+             id="rect6740"
+             width="18"
+             height="2"
+             x="10"
+             y="14" />
+    </g>
+</svg>

@@ -1,0 +1,416 @@
+{
+	"manifest_description" : 
+	{
+		"message" : "Shows you what kind of link you are going to click on.",
+		"description" : "Manifest JSON description string"
+	},
+	"settings_popup_install" : 
+	{
+		"message" : "Link Alert has been installed. Please, take a look at the Preferences!",
+		"description" : "Install/update popup"
+	},
+	"settings_popup_update" : 
+	{
+		"message" : "Link Alert has been updated. Please, take a look at the Changelog to find out what's new!",
+		"description" : "Install/update popup"
+	},
+	"settings_sidebar_menuitem_settings" : 
+	{
+		"message" : "Settings",
+		"description" : "Sidebar menu"
+	},
+	"settings_sidebar_menuitem_help" : 
+	{
+		"message" : "Help",
+		"description" : "Sidebar menu"
+	},
+	"settings_sidebar_menuitem_changelog" : 
+	{
+		"message" : "Changelog",
+		"description" : "Sidebar menu"
+	},
+	"settings_sidebar_menuitem_credits" : 
+	{
+		"message" : "Credits",
+		"description" : "Sidebar menu"
+	},
+	"settings_content_preferences_header" : 
+	{
+		"message" : "Preferences",
+		"description" : "Preferences header"
+	},
+	"settings_content_preferences_showBox" : 
+	{
+		"message" : "Draw a box around the icons to make it look like a tooltip",
+		"description" : "Preferences body"
+	},
+	"settings_content_preferences_smartPosition" : 
+	{
+		"message" : "Enable smart positioning",
+		"description" : "Preferences body"
+	},
+	"settings_content_preferences_darkIcons" : 
+	{
+		"message" : "Use inverted icon set",
+		"description" : "Preferences body"
+	},
+	"settings_content_preferences_noTitle" : 
+	{
+		"message" : "Remove the title attribute from the links",
+		"description" : "Preferences body"
+	},
+	"settings_content_preferences_keepZoom" : {
+		"message" : "Don't resize the icons on page zoom",
+		"description" : "Preferences body"
+	},
+	"settings_content_preferences_blacklistOn" : 
+	{
+		"message" : "Disable extension on the following sites:",
+		"description" : "Preferences body"
+	},
+	"settings_content_preferences_blacklistEditor" : 
+	{
+		"message" : "Don't you know how to use the blacklist? Take a look at the Help section!",
+		"description" : "Blacklist editor placeholder"
+	},
+	"settings_content_preferences_saveBlacklist" : 
+	{
+		"message" : "Save blacklist",
+		"description" : "Blacklist save button"
+	},
+	"settings_content_fileTypes_header" : 
+	{
+		"message" : "File types",
+		"description" : "File types header"
+	},
+	"settings_content_fileTypes_text" : 
+	{
+		"message" : "Plain text",
+		"description" : "File types body"
+	},
+	"settings_content_fileTypes_document" : 
+	{
+		"message" : "Fornatted text",
+		"description" : "File types body"
+	},
+	"settings_content_fileTypes_spreadsheet" : 
+	{
+		"message" : "Spreadsheet",
+		"description" : "File types body"
+	},
+	"settings_content_fileTypes_presentation" : 
+	{
+		"message" : "Presentation",
+		"description" : "File types body"
+	},
+	"settings_content_fileTypes_database" : 
+	{
+		"message" : "Database",
+		"description" : "File types body"
+	},
+	"settings_content_fileTypes_ebook" : 
+	{
+		"message" : "E-book",
+		"description" : "File types body"
+	},
+	"settings_content_fileTypes_image" : 
+	{
+		"message" : "Image",
+		"description" : "File types body"
+	},
+	"settings_content_fileTypes_video" : 
+	{
+		"message" : "Video",
+		"description" : "File types body"
+	},
+	"settings_content_fileTypes_audio" : 
+	{
+		"message" : "Audio",
+		"description" : "File types body"
+	},
+	"settings_content_fileTypes_flash" : 
+	{
+		"message" : "Flash",
+		"description" : "File types body"
+	},
+	"settings_content_fileTypes_archive" : 
+	{
+		"message" : "Archive",
+		"description" : "File types body"
+	},
+	"settings_content_fileTypes_data" : 
+	{
+		"message" : "Structured data",
+		"description" : "File types body"
+	},
+	"settings_content_fileTypes_executable" : 
+	{
+		"message" : "Executable",
+		"description" : "File types body"
+	},
+	"settings_content_fileTypes_extension" : 
+	{
+		"message" : "Browser extension",
+		"description" : "File types body"
+	},
+	"settings_content_fileTypes_source" : 
+	{
+		"message" : "Source code",
+		"description" : "File types body"
+	},
+	"settings_content_fileTypes_font" : 
+	{
+		"message" : "Font",
+		"description" : "File types body"
+	},
+	"settings_content_fileTypes_torrent" : 
+	{
+		"message" : "BitTorrent",
+		"description" : "File types body"
+	},
+	"settings_content_protocols_header" : 
+	{
+		"message" : "Protocols",
+		"description" : "Protocols header"
+	},
+	"settings_content_protocols_insecure" : 
+	{
+		"message" : "HTTP connection (insecure)",
+		"description" : "Protocols body"
+	},
+	"settings_content_protocols_secure" : 
+	{
+		"message" : "HTTPS connection (secure)",
+		"description" : "Protocols body"
+	},
+	"settings_content_protocols_email" : 
+	{
+		"message" : "E-mail address",
+		"description" : "Protocols body"
+	},
+	"settings_content_protocols_opera" : 
+	{
+		"message" : "Opera internal page",
+		"description" : "Protocols body"
+	},
+	"settings_content_protocols_internal" : 
+	{
+		"message" : "Browser (non-Opera) internal page",
+		"description" : "Protocols body"
+	},
+	"settings_content_protocols_feed" : 
+	{
+		"message" : "News feed",
+		"description" : "Protocols body"
+	},
+	"settings_content_protocols_ftp" : 
+	{
+		"message" : "FTP address",
+		"description" : "Protocols body"
+	},
+	"settings_content_protocols_coin" : 
+	{
+		"message" : "Online currency",
+		"description" : "Protocols body"
+	},
+	"settings_content_protocols_magnet" : 
+	{
+		"message" : "Magnet link",
+		"description" : "Protocols body"
+	},
+	"settings_content_protocols_geolocation" : 
+	{
+		"message" : "Geolocation link",
+		"description" : "Protocols body"
+	},
+	"settings_content_protocols_js" : 
+	{
+		"message" : "Inline JavaScript code",
+		"description" : "Protocols body"
+	},
+	"settings_content_protocols_voip" : 
+	{
+		"message" : "VoIP call",
+		"description" : "Protocols body"
+	},
+	"settings_content_protocols_irc" : 
+	{
+		"message" : "IRC channel",
+		"description" : "Protocols body"
+	},
+	"settings_content_protocols_file" : 
+	{
+		"message" : "Local file",
+		"description" : "Protocols body"
+	},
+	"settings_content_protocols_viewSource" : 
+	{
+		"message" : "Web page in source code mode",
+		"description" : "Protocols body"
+	},
+	"settings_content_attributes_header" : 
+	{
+		"message" : "Attributes",
+		"description" : "Attributes header"
+	},
+	"settings_content_attributes_newTab" : 
+	{
+		"message" : "Links opening in new tab/window",
+		"description" : "Attributes body"
+	},
+	"settings_content_attributes_onClick" : 
+	{
+		"message" : "Links having mouse left click event handlers",
+		"description" : "Attributes body"
+	},
+	"settings_content_attributes_onContextMenu" : 
+	{
+		"message" : "Links having custom context menu",
+		"description" : "Attributes body"
+	},
+	"settings_content_url_header" : 
+	{
+		"message" : "URL fragments",
+		"description" : "URL header"
+	},
+	"settings_content_url_hash" : 
+	{
+		"message" : "In-page anchor",
+		"description" : "URL body"
+	},
+	"settings_content_url_query" : 
+	{
+		"message" : "Query",
+		"description" : "URL body"
+	},
+	"settings_content_howToUse_header" : 
+	{
+		"message" : "How to use",
+		"description" : "How to use header"
+	},
+	"settings_content_howToUse_reload" : 
+	{
+		"message" : "After installation you have to reload open pages to make Link Alert work. You also have to reload open pages to see changes if you modify the settings.",
+		"description" : "How to use body"
+	},
+	"settings_content_howToUse_smartPosition" : 
+	{
+		"message" : "If you enable \"Smart position\" the extension will calculate the available space on the right side of the mouse cursor and put the icons to the left side if there is not enough space. If you disable this option, the icons will be placed to the right side of the cursor every time, but they may float out of the visible area.",
+		"description" : "How to use body"
+	},
+	"settings_content_howToUse_blacklist" : 
+	{
+		"message" : "To add certain sites to the blacklist, put every URL into a new line! You can use an asterisk to block a whole domain. For example:<br />Disable Link Alert on this article: <em>http://en.wikipedia.org/wiki/Opera_browser</em><br />Disable Link Alert on the whole english Wikipedia: <em>http://en.wikipedia.org*</em>",
+		"description" : "How to use body"
+	},
+	"settings_content_performance_header" : 
+	{
+		"message" : "Performance issues",
+		"description" : "Performance issues header"
+	},
+	"settings_content_performance_lag" : 
+	{
+		"message" : "Link Alert can lag on certain (heavy scripted) sites. If you find it disturbing, add the address to the blacklist!",
+		"description" : "Performance issues body"
+	},
+	"settings_content_notes_header" : 
+	{
+		"message" : "Notes",
+		"description" : "Notes header"
+	},
+	"settings_content_notes_howItWorks" : 
+	{
+		"message" : "Link Alert listens only to the actual links appearing in the source code, and does not send any request to the linked page! For example, a link can point to a pdf file without mentioning anything about it in the URL. It can not be catched this way, so you will not see any sign of it.",
+		"description" : "Notes body"
+	},
+	"settings_content_notes_operaPolicy" : 
+	{
+		"message" : "According to Opera's policy, extensions don't work on internal browser pages like settings, history or this page.",
+		"description" : "Notes body"
+	},
+	"settings_content_credits_header" : 
+	{
+		"message" : "Credits",
+		"description" : "Credits header"
+	},
+	"settings_content_credits_createdBy" : 
+	{
+		"message" : "Link Alert is created by <a href=\"http://tothrobert.ininet.hu\" target=\"_blank\">Robert Toth</a>.",
+		"description" : "Credits body"
+	},
+	"settings_content_credits_inspiredBy" : 
+	{
+		"message" : "This extension was inspired by the <a href=\"http://extendopera.org/linked-content/link-alert\" target=\"_blank\">LinkAlert</a> userscript.",
+		"description" : "Credits body"
+	},
+	"settings_content_credits_copyCode" : 
+	{
+		"message" : "Besides my own coding I use some layout and style from the internal pages made by Opera Software ASA.",
+		"description" : "Credits body"
+	},
+	"settings_content_credits_thanks" : 
+	{
+		"message" : "Thanks for every contributor! <em>(See the changelog for details!)",
+		"description" : "Credits body"
+	},
+	"settings_content_warning_header" : 
+	{
+		"message" : "Warning",
+		"description" : "Warning header"
+	},
+	"settings_content_warning_notResponsible" : 
+	{
+		"message" : "This extension was not made by Opera Software ASA. The company is not responsible for any of the errors.",
+		"description" : "Warning body"
+	},
+	"settings_content_license_header" : 
+	{
+		"message" : "License",
+		"description" : "License header"
+	},
+	"settings_content_license_share" : 
+	{
+		"message" : "You can share this extension, but I ask you to link the download page instead of copying the NEX file.",
+		"description" : "License body"
+	},
+	"settings_content_license_copy" : 
+	{
+		"message" : "You can copy and modify the code of this extension as long as it's free and you use the proper credits.",
+		"description" : "License body"
+	},
+	"settings_content_contact_header" : 
+	{
+		"message" : "Contact",
+		"description" : "Contact header"
+	},
+	"settings_content_contact_feedback1" : 
+	{
+		"message" : "<a href=\"https://addons.opera.com/hu/extensions/details/link-alert-2/\" target=\"_blank\">Opera Addon Catalog</a>",
+		"description" : "Contact body"
+	},
+	"settings_content_contact_feedback2" : 
+	{
+		"message" : "<a href=\"https://addons.opera.com/hu/extensions/details/link-alert-2/\" target=\"_blank\">GitHub</a>",
+		"description" : "Contact body"
+	},
+	"settings_content_contact_email" : 
+	{
+		"message" : "<a href=\"mailto:nekomajin42@gmail.com\">Email</a>",
+		"description" : "Contact body"
+	},
+	"settings_content_permissions_header" : 
+	{
+		"message" : "Permissions",
+		"description" : "Permissions header"
+	},
+	"settings_content_permissions_tabs" : 
+	{
+		"message" : "Link Alert needs permission to access your tabs only to open the settings page when the extension is installed or updated.",
+		"description" : "Permissions body"
+	},
+	"settings_content_permissions_data" : 
+	{
+		"message" : "Link Alert needs permission to access your data on all websites to analyze links.",
+		"description" : "Permissions body"
+	}
+}

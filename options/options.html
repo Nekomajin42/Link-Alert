@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<!-- coded by Nekomajin -->
+<html dir="ltr" lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Link Alert</title>
+		<link rel="stylesheet" href="tools.css" type="text/css" />
+		<link rel="stylesheet" href="style.css" type="text/css" />
+		<link rel="icon" href="../icons/icon16.png" type="image/png" />
+	</head>
+	<body>
+		<div id="wallpaper">
+			<div id="tool-container">
+				<div id="sidebar">
+					<div id="sidebar-icon"></div>
+					<h1 i18n-content="menuTitle">Link Alert</h1>
+					<menu id="sidebar-menu">
+						<li data-i18n="settings_sidebar_menuitem_settings" id="sub-settings" class="selected"></li>
+						<li data-i18n="settings_sidebar_menuitem_help" id="sub-help"></li>
+						<li data-i18n="settings_sidebar_menuitem_changelog" id="sub-changelog"></li>
+						<li data-i18n="settings_sidebar_menuitem_credits" id="sub-credits"></li>
+					</menu>
+				</div> <!-- sidebar -->
+				<div id="content">
+					<div class="subpage visible" id="settings">
+						<section>
+							<h2 data-i18n="settings_content_preferences_header" class="section-header"></h2>
+							<form class="options" id="preferences">
+								<div class="empty"></div><input type="checkbox" id="showBox" /> <label data-i18n="settings_content_preferences_showBox" for="showBox"></label><br />
+								<div class="empty"></div><input type="checkbox" id="smartPosition" /> <label data-i18n="settings_content_preferences_smartPosition" for="smartPosition"></label><br />
+								<div class="empty"></div><input type="checkbox" id="darkIcons" /> <label data-i18n="settings_content_preferences_darkIcons" for="darkIcons"></label><br />
+								<div class="empty"></div><input type="checkbox" id="noTitle" /> <label data-i18n="settings_content_preferences_noTitle" for="noTitle"></label><br />
+								<div class="empty"></div><input type="checkbox" id="keepZoom" /> <label data-i18n="settings_content_preferences_keepZoom" for="keepZoom"></label><br />
+								<div class="empty"></div><input type="checkbox" id="blacklistOn" /> <label data-i18n="settings_content_preferences_blacklistOn" for="blacklistOn"></label><br />
+								<div class="empty"></div><textarea data-i18n="settings_content_preferences_blacklistEditor" id="blacklistEditor"></textarea>
+								<input data-i18n="settings_content_preferences_saveBlacklist" type="button" id="saveBlacklist" />
+							</form>
+						</section>
+						<section>
+							<h2 data-i18n="settings_content_fileTypes_header" class="section-header"></h2>
+							<form class="options" id="filetypes">
+								<div class="icon"></div><input type="checkbox" id="text" /> <label data-i18n="settings_content_fileTypes_text" for="text"> <em>(.txt, .readme, .nfo, .srt, .ssa, .ass)</em></label><br />
+								<div class="icon"></div><input type="checkbox" id="document" /> <label data-i18n="settings_content_fileTypes_document" for="document"> <em>(.doc, .docx, .rtf, .odt, .abw, .tex, .ltx)</em></label><br />
+								<div class="icon"></div><input type="checkbox" id="spreadsheet" /> <label data-i18n="settings_content_fileTypes_spreadsheet" for="spreadsheet"> <em>(.xls, .xlsx, .ods, .gnumeric)</em></label><br />
+								<div class="icon"></div><input type="checkbox" id="presentation" /> <label data-i18n="settings_content_fileTypes_presentation" for="presentation"> (.ppt, .pptx, .odp)</em></label><br />
+								<div class="icon"></div><input type="checkbox" id="database" /> <label data-i18n="settings_content_fileTypes_database" for="database"> (.mdb, .accdb, .odb)</em></label><br />
+								<div class="icon"></div><input type="checkbox" id="ebook" /> <label data-i18n="settings_content_fileTypes_ebook" for="ebook"> <em>(.pdf, .epub, .azw, .mobi)</em></label><br />
+								<div class="icon"></div><input type="checkbox" id="image" /> <label data-i18n="settings_content_fileTypes_image" for="image"> <em>(.jpg, .jpeg, .png, .bmp, .gif, .ico, .svg, .webp, .xcf, .psd)</em></label><br />
+								<div class="icon"></div><input type="checkbox" id="video" /> <label data-i18n="settings_content_fileTypes_video" for="video"> <em>(.mpg, .mpeg, .mp4, .avi, .mov, .wmv, .webm, .3gp, .vob)</em></label><br />
+								<div class="icon"></div><input type="checkbox" id="audio" /> <label data-i18n="settings_content_fileTypes_audio" for="audio"> <em>(.mp3, .wav, .wma, .ogg)</em></label><br />
+								<div class="icon"></div><input type="checkbox" id="flash" /> <label data-i18n="settings_content_fileTypes_flash" for="flash"> <em>(.swf, .flv)</em></label><br />
+								<div class="icon"></div><input type="checkbox" id="archive" /> <label data-i18n="settings_content_fileTypes_arcive" for="archive"> <em>(.zip, .rar, .cbr, .cbz, .tar, .7z, .tgz, .tz, .gz, .xz, .lz, .bz2, .gzip, .cab, .pkg, .dmg, .bin, .iso)</em></label><br />
+								<div class="icon"></div><input type="checkbox" id="data" /> <label data-i18n="settings_content_fileTypes_data" for="data"> <em>(.xml, .json, .dat, .csv, .sqlite, .ini, .cue)</em></label><br />
+								<div class="icon"></div><input type="checkbox" id="executable" /> <label data-i18n="settings_content_fileTypes_executable" for="executable"> <em>(.exe, .msi, .app, .bat, .sh, .jar, .cmd, .apk, .vb)</em></label><br />
+								<div class="icon"></div><input type="checkbox" id="extension" /> <label data-i18n="settings_content_fileTypes_extension" for="extension"> <em>(.nex, .oex, .crx, .xpi)</em></label><br />
+								<div class="icon"></div><input type="checkbox" id="source" /> <label data-i18n="settings_content_fileTypes_source" for="source"> <em>(.js, .css, .sql, .c, .h, .cpp, .hpp, .cs, .java, .class, .py, .pl, .rb, .cgi)</em></label><br />
+								<div class="icon"></div><input type="checkbox" id="font" /> <label data-i18n="settings_content_fileTypes_font" for="font"> <em>(.ttf, .otf, .woff)</em></label><br />
+								<div class="icon"></div><input type="checkbox" id="torrent" /> <label data-i18n="settings_content_fileTypes_torrent" for="torrent"> <em>(.torrent)</em></label>
+							</form>
+						</section>
+						<section>
+							<h2 data-i18n="settings_content_protocols_header" class="section-header"></h2>
+							<form class="options" id="protocols">
+								<div class="icon"></div><input type="checkbox" id="insecure" /> <label data-i18n="settings_content_protocols_insecure" for="insecure"></label><br />
+								<div class="icon"></div><input type="checkbox" id="secure" /> <label data-i18n="settings_content_protocols_secure" for="secure"></label><br />
+								<div class="icon"></div><input type="checkbox" id="email" /> <label data-i18n="settings_content_protocols_email" for="email"></label><br />
+								<div class="icon"></div><input type="checkbox" id="opera" /> <label data-i18n="settings_content_protocols_opera" for="opera"></label><br />
+								<div class="icon"></div><input type="checkbox" id="internal" /> <label data-i18n="settings_content_protocols_internal" for="internal"></label><br />
+								<div class="icon"></div><input type="checkbox" id="feed" /> <label data-i18n="settings_content_protocols_feed" for="feed"></label><br />
+								<div class="icon"></div><input type="checkbox" id="ftp" /> <label data-i18n="settings_content_protocols_ftp" for="ftp"></label><br />
+								<div class="icon"></div><input type="checkbox" id="coin" /> <label data-i18n="settings_content_protocols_coin" for="coin"></label><br />
+								<div class="icon"></div><input type="checkbox" id="magnet" /> <label data-i18n="settings_content_protocols_magnet" for="magnet"></label><br />
+								<div class="icon"></div><input type="checkbox" id="geolocation" /> <label data-i18n="settings_content_protocols_geolocation" for="geolocation"></label><br />
+								<div class="icon"></div><input type="checkbox" id="js" /> <label data-i18n="settings_content_protocols_js" for="js"></label><br />
+								<div class="icon"></div><input type="checkbox" id="voip" /> <label data-i18n="settings_content_protocols_voip" for="voip"></label><br />
+								<div class="icon"></div><input type="checkbox" id="irc" /> <label data-i18n="settings_content_protocols_irc" for="irc"></label><br />
+								<div class="icon"></div><input type="checkbox" id="file" /> <label data-i18n="settings_content_protocols_file" for="file"></label><br />
+								<div class="icon"></div><input type="checkbox" id="viewSource" /> <label data-i18n="settings_content_protocols_viewSource" for="viewSource"></label>
+							</form>
+						</section>
+						<section>
+							<h2 data-i18n="settings_content_attributes_header" class="section-header"></h2>
+							<form class="options" id="attributes">
+								<div class="icon"></div><input type="checkbox" id="newTab" /> <label data-i18n="settings_content_attributes_newTab" for="newTab"></label><br />
+								<div class="icon"></div><input type="checkbox" id="onClick" /> <label data-i18n="settings_content_attributes_onClick" for="onClick"></label><br />
+								<div class="icon"></div><input type="checkbox" id="onContextMenu" /> <label data-i18n="settings_content_attributes_onContextMenu" for="onContextMenu"></label>
+							</form>
+						</section>
+						<section>
+							<h2 data-i18n="settings_content_url_header" class="section-header"></h2>
+							<form class="options" id="url">
+								<div class="icon"></div><input type="checkbox" id="hash" /> <label data-i18n="settings_content_url_hash" for="hash"></label><br />
+								<div class="icon"></div><input type="checkbox" id="query" /> <label data-i18n="settings_content_url_query" for="query"></label>
+							</form>
+						</section>
+					</div>
+					<div class="subpage" id="help">
+						<section>
+							<h2 data-i18n="settings_content_howToUse_header" class="section-header"></h2>
+							<ul>
+								<li data-i18n="settings_content_howToUse_reload"></li>
+								<li data-i18n="settings_content_howToUse_smartPosition"></li>
+								<li data-i18n="settings_content_howToUse_blacklist"></li>
+							</ul>
+						</section>
+						<section>
+							<h2 data-i18n="settings_content_performance_header" class="section-header"></h2>
+							<ul>
+								<li data-i18n="settings_content_performance_lag"></li>
+							</ul>
+						</section>
+						<section>
+							<h2 data-i18n="settings_content_notes_header" class="section-header"></h2>
+							<ul>
+								<li data-i18n="settings_content_notes_howItWorks"></li>
+								<li data-i18n="settings_content_notes_operaPolicy"></li>
+							</ul>
+						</section>
+					</div>
+					<div class="subpage" id="changelog">
+						<section>
+							<h2 class="section-header">Future plans</h2>
+							<ul>
+								<li>ADD: User theme to settings page</li>
+								<li>CHANGE: Install/update popup to notification</li>
+							</ul>
+						</section>
+						<section>
+							<h2 class="section-header">v1.2 (2014. 08. 23.)</h2>
+							<ul>
+								<li>ADD: Localization support</li>
+								<li>ADD: Hungarian translation</li>
+								<li>ADD: New option to preserve icon size on page zoom</li>
+								<li>ADD: Database file types</li>
+								<li>REMOVE: "Vertical align" option</li>
+								<li>CHANGE: Major code rewrite</li>
+								<li>CHANGE: Switch from background page to event page (resources)</li>
+								<li>CHANGE: New settings page</li>
+								<li>CHANGE: Formatted text icon</li>
+								<li>FIX: Tooltip got stuck bug</li>
+							</ul>
+						</section>
+						<section>
+							<h2 class="section-header">v1.0.1 (2014. 02. 11.)</h2>
+							<ul>
+								<li>ADD: PNG file type and view-source URI scheme</li>
+								<li>FIX: Icon overflow bug</li>
+							</ul>
+						</section>
+						<section>
+							<h2 class="section-header">v1.0 (2013. 08. 30.)</h2>
+							<ul>
+								<li>Initial release</li>
+							</ul>
+						</section>
+					</div>
+					<div class="subpage" id="credits">
+						<section>
+							<h2 data-i18n="settings_content_credits_header" class="section-header"></h2>
+							<ul>
+								<li data-i18n="settings_content_credits_createdBy"></li>
+								<li data-i18n="settings_content_credits_inspiredBy"></li>
+								<li data-i18n="settings_content_credits_copyCode"></li>
+								<li data-i18n="settings_content_credits_thanks"></em></li>
+							</ul>
+						</section>
+						<section>
+							<h2 data-i18n="settings_content_warning_header" class="section-header"></h2>
+							<ul>
+								<li data-i18n="settings_content_warning_notResponsible"></li>
+							</ul>
+						</section>
+						<section>
+							<h2 data-i18n="settings_content_license_header" class="section-header"></h2>
+							<ul>
+								<li data-i18n="settings_content_license_share"></li>
+								<li data-i18n="settings_content_license_copy"></li>
+							</ul>
+						</section>
+						<section>
+							<h2 data-i18n="settings_content_contact_header" class="section-header"></h2>
+							<ul>
+								<li data-i18n="settings_content_contact_feedback1"></li>
+								<li data-i18n="settings_content_contact_feedback2"></li>
+								<li data-i18n="settings_content_contact_email"></li>
+							</ul>
+						</section>
+						<section>
+							<h2 data-i18n="settings_content_permissions_header" class="section-header"></h2>
+							<ul>
+								<li data-i18n="settings_content_permissions_tabs"></li>
+								<li data-i18n="settings_content_permissions_data"></li>
+							</ul>
+						</section>
+					</div>
+				</div> <!-- content -->
+			</div> <!-- tool-container -->
+		</div> <!-- wallpaper -->
+		<script src="data.js" type="text/javascript"></script>
+		<script src="control.js" type="text/javascript"></script>
+		<script src="options.js" type="text/javascript"></script>
+	</body>
+</html>
